@@ -58,7 +58,7 @@ service:
   annotations: {}
 
 elasticsearch:
-  url: http://ucsx-es-elasticsearch.ucsx.svc:9200
+  url: http://elastic-es-http.infra.svc:9200
 
 # * Monitoring
 monitoring:
