@@ -9,7 +9,7 @@ tenant:
 gauth:
   auth:
     clientId: gauth_api_client
-    clientSecret: ucsx_gauth_client_secret
+    clientSecret: KAxmgfFKsaZzVhpBTQHFybQc+T10/SnZU80+EYkMjwU=
     regions: global_location
 
 db:
