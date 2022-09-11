@@ -7,7 +7,7 @@ image:
   registry: $IMAGE_REGISTRY
   pullSecrets: 
     - name: pullsecret
-  repository: deploy_ucsx
+  #repository: deploy_ucsx
 
 command: "register_ucsx_tenant" #"unregister_ucsx_tenant" 
        
@@ -22,10 +22,10 @@ keepPod: true
 
 # * WWE
 # wwe: {}
-wwe:
-  skipRegistration: 'true'  
 #wwe:
-#  restMode: true
+#  skipRegistration: 'true'  
+wwe:
+  restMode: true
 
 gauth:
   auth:
@@ -36,20 +36,19 @@ gauth:
 resources: {}
 
 # * Pod configuration
-podSecurityContext: {}
+#podSecurityContext: {}
 
-#podSecurityContext:
-#  runAsNonRoot: true
-#  runAsUser: 500
-#  runAsGroup: 500
-#  fsGroup: 500
+podSecurityContext:
+  runAsNonRoot: false
+  runAsUser: 500
+  runAsGroup: 500
+  fsGroup: 500
 
-
-securityContext: {}
+#securityContext: {}
  
-nodeSelector: {}
- priorityClassName: ''
- keepPod: true
+#nodeSelector: {}
+# priorityClassName: ''
+# keepPod: true
 
 
 ingress:
