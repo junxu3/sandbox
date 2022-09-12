@@ -43,9 +43,9 @@ podSecurityContext:
   #runAsUser: 500
   #runAsGroup: 500
   #fsGroup: 500
-  runAsUser: genesys
-  runAsGroup: genesys
-  fsGroup: genesys
+  runAsUser: 20141
+  runAsGroup: 20142
+  fsGroup: 20142
   
 #securityContext: {}
  
