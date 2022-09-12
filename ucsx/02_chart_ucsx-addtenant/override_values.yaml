@@ -4,10 +4,11 @@
 ###############################################################################
 
 image:
-  registry: $IMAGE_REGISTRY/ucsx
+  registry: $IMAGE_REGISTRY
+  repository: deploy_ucsx
+  pullPolicy: IfNotPresent
   pullSecrets: 
     - name: pullsecret
-  #repository: deploy_ucsx
 
 command: "register_ucsx_tenant" #"unregister_ucsx_tenant" 
        
