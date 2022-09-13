@@ -23,10 +23,10 @@ keepPod: true
 
 # * WWE
 # wwe: {}
-#wwe:
-#  skipRegistration: 'true'  
 wwe:
-  restMode: true
+  skipRegistration: 'true'  
+#wwe:
+#  restMode: true
 
 gauth:
   auth:
