@@ -13,4 +13,4 @@ db:
   host: POSTGRES_ADDR
   name: DB_NAME_UCSX
   port: "5432"
-  ssl: "false"
+  #ssl: "false"
