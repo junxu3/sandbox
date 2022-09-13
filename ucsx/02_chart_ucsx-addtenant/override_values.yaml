@@ -21,12 +21,7 @@ secretNameBase: ucsx-secret
 
 keepPod: true
 
-# * WWE
-# wwe: {}
-wwe:
-  skipRegistration: 'true'  
-#wwe:
-#  restMode: true
+
 
 gauth:
   auth:
@@ -36,33 +31,43 @@ gauth:
 
 resources: {}
 
-# * Pod configuration
-#podSecurityContext: {}
 
-podSecurityContext:
-  runAsNonRoot: true
-  #runAsUser: 500
-  #runAsGroup: 500
-  #fsGroup: 500
-  runAsUser: 20141
-  runAsGroup: 20142
-  fsGroup: 20142
+
+# * WWE
+# wwe: {}
+wwe:
+  skipRegistration: 'true'  
+#wwe:
+#  restMode: true
+
+
+# * Pod configuration
+podSecurityContext: {}
+
+#podSecurityContext:
+#  runAsNonRoot: true
+#  #runAsUser: 500
+#  #runAsGroup: 500
+#  #fsGroup: 500
+#  runAsUser: 20141
+#  runAsGroup: 20142
+#  fsGroup: 20142
   
-#securityContext: {}
+securityContext: {}
  
 #nodeSelector: {}
 # priorityClassName: ''
 # keepPod: true
 
 
-ingress:
-  enabled: true
-  hosts:
-  - host: ucsx.${DOMAIN}
-    paths:
-    - path: /ucs/v3/
-      port: 8080
-    - path: /ucs/v10/
-      port: 8080
-    - path: /ucs/v3/config
-      port: 8500
+#ingress:
+#  enabled: true
+#  hosts:
+#  - host: ucsx.${DOMAIN}
+#    paths:
+#    - path: /ucs/v3/
+#      port: 8080
+#    - path: /ucs/v10/
+#      port: 8080
+#    - path: /ucs/v3/config
+#      port: 8500
