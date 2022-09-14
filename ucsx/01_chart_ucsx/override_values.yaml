@@ -68,3 +68,9 @@ monitoring:
   alarms: true
   # Create ConfigMaps with Grafana Dashboards
   dashboards: true
+
+# Modify the DNS Configuration to match your environment
+dnsConfig:
+  options:
+    - name: ndots
+      value: "3"
