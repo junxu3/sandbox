@@ -53,11 +53,21 @@ podSecurityContext: {}
 #  runAsGroup: 20142
 #  fsGroup: 20142
   
-securityContext: {}
+#securityContext: {}
+securityContext:
+  runAsNonRoot: true
+  runAsUser: null
+  runAsGroup: 0
+  fsGroup: null
+
+containerSecurityContext: {}
  
 #nodeSelector: {}
 # priorityClassName: ''
 # keepPod: true
+
+
+
 
 
 #ingress:
