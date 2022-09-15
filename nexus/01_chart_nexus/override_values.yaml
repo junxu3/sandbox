@@ -20,8 +20,8 @@ existingSecret:
 existingConfig:
 
 nexus:
-  fqdn: "http://digital.$DOMAIN"
-  redirectProtocol: "http://"
+  fqdn: "https://digital.$DOMAIN"
+  redirectProtocol: "https://"
   social:
     apikey: ""
     retryTimeout: 10000
