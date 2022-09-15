@@ -3,7 +3,7 @@
 # https://all.docs.genesys.com/PEC-DC/Current/DCPEGuide/Configure
 ###############################################################################
 deploymentType: Deployment
-replicaCount: 1
+replicaCount: 2
 
 image:
   registry: $IMAGE_REGISTRY
