@@ -10,7 +10,7 @@ image:
   pullSecrets: 
     - name: pullsecret
 
-command: "register_ucsx_tenant" #"unregister_ucsx_tenant" 
+command: "unregister_ucsx_tenant" #"register_ucsx_tenant"
        
 ucsx:
   addr: ucsx.${NS}.svc:8500
