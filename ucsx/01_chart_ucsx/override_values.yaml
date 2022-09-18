@@ -70,7 +70,7 @@ monitoring:
   dashboards: true
 
 # Modify the DNS Configuration to match your environment
-dnsConfig:
-  options:
-    - name: ndots
-      value: "3"
+#dnsConfig:
+#  options:
+#    - name: ndots
+#      value: "3"
