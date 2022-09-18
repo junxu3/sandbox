@@ -4,8 +4,8 @@
 ###############################################################################
 tenant:
   id: ucsx_sid
-  #ccid: ucsx_tenant_id
-  ccid: 3559e25f-76fb-4644-8d9a-d51637a0b1c4
+  ccid: ucsx_tenant_id
+  #ccid: 3559e25f-76fb-4644-8d9a-d51637a0b1c4
 
 gauth:
   auth:
